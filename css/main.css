@@ -219,4 +219,27 @@ footer {
   footer .row .line {
     border-top-color: rgba(255, 255, 255, 0.8); }
 
+.my-cart .heading-has-bg {
+  background: linear-gradient(to left, rgba(35, 225, 227, 0.7), rgba(145, 73, 185, 0.7)), url("../images/hero/heading-img.jpeg") center no-repeat;
+  height: 30vh; }
+  .my-cart .heading-has-bg h1 {
+    font-family: fantasy;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.4); }
+.my-cart .cart-item-container {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .my-cart .cart-item-container .cart-item-img {
+    max-width: 350px; }
+  .my-cart .cart-item-container .remove-cart-item {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
 /*# sourceMappingURL=main.css.map */
