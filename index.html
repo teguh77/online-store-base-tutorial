@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="tama">
+    <title>Conquer Template</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fontAw/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-2 shadow-sm">
+            <a href="#" class="text-clipped navbar-brand">
+                <i class="fa fa-meteor d-flex"><!--agar tulisan tidak membesar harus ditambah d-flex-->
+                <span class="m-auto ">Meteor</span><!--agar space tidak melebar harus dikasih m-auto-->
+                </i>
+            </a>
+            <div class="main-nav-outer d-flex"> <!--to flex item-->
+                <i class="fa fa-times text-clipped menu-close-icon d-lg-none"></i>
+
+                <nav class="main-nav navbar navbar-light navbar-expand-lg m-auto text-center"><!--m-auto untuk membuat center otomatis -->
+                    <ul class="navbar-nav d-flex"> 
+                        <li class="nav-item">
+                            <a href="#"class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"class="nav-link">Men</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="#"class="nav-link">Women</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="#"class="nav-link">Kids</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="#"class="nav-link">New Arrivals</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="#"class="nav-link">Sale</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!--/nav-main-outer-->
+            <div class="nav-icons-container d-flex justify-content-between">
+                <div class="nav-icons">
+                    <a href="#">
+                        <i class="fa fa-search text-clipped"></i>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a href="#">
+                        <i class="fa fa-shopping-bag bag-item-count text-clipped"></i>
+                        <span class="badge">2</span>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user text-clipped"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <form action="#" class="p-2 text-secondary">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter Password" required>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                    <label class="form-check-label" for="dropdown-checkbox">Remember Me</label>
+                                </div>
+                                <button type="submit" class="btn btn-bg my-2">Login</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                Don't have an account ? Sign Up
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                Forgot your password ? Reset Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-icons d-lg-none">
+                     <i class="fa fa-bars open-menu-icon text-clipped"></i><!--tidak dikasih anchor tag agar pada saat diklik kode dapat dieksekusi dengan baik karena class open menu berada pada i tag bukan a tag(i sudah distyle) dan anchor tag dibuang karena kode juga tidak memerlukan href lagi-->
+                </div>
+            </div>
+        </div>
+
+        <!-- start promotion -->
+        <div class="promotion text-white text-center py-2 mb-5">
+            <span>
+                <span class="text-uppercase font-weight-bold">Free Shipping</span> on orders of $100 or more!
+            </span>
+        </div>
+        <!-- end promotion -->
+
+        <!-- start carousel -->
+        <div class="container">
+            <div id="carousel-indicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="1"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img class="img-fluid d-lg-none" src="images/carousel/carousel-img-1-mobile.jpeg" alt="carousel-image">
+                            <img class="img-fluid d-none d-lg-block" src="images/carousel/carousel-img-1.jpeg" alt="carousel-image">
+                        </a>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid d-lg-none" src="images/carousel/carousel-img-2-mobile.jpg" alt="carousel-image">
+                            <img class="img-fluid d-none d-lg-block" src="images/carousel/carousel-img-2.jpg" alt="carousel-image">
+                        </a>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid d-lg-none" src="images/carousel/carousel-img-3-mobile.jpeg" alt="carousel-image">
+                            <img class="img-fluid d-none d-lg-block" src="images/carousel/carousel-img-3.jpeg" alt="carousel-image">
+                        </a>
+                    </div>
+                </div>
+                <a href="#carousel-indicators" class="carousel-control-prev" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left text-clipped"></i>
+                </a>
+                <a href="#carousel-indicators" class="carousel-control-next" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right text-clipped"></i>
+                </a>
+            </div>
+        </div>
+        <!-- end carousel -->
+
+        <!-- featured-brand -->
+        <section class="featured-brand">
+            <div class="container">
+                <div class="row align-items-center text-center">
+                    <div class="col-12 col-sm-6 col-md-2 mb-5">
+                        <a href="#">
+                            <img src="images/brands/nike.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 mb-5">
+                        <a href="#">
+                            <img src="images/brands/jordan.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 mb-5">
+                        <a href="#">
+                            <img src="images/brands/adidas.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 mb-5">
+                        <a href="#">
+                            <img src="images/brands/under-armour.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 mb-5">
+                        <a href="#">
+                            <img src="images/brands/puma.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 mb-5">
+                        <a href="#">
+                            <img src="images/brands/vans.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end featured-brand -->
+    </header>
+    <!-- /header -->
+
+    <!-- Women's Collection -->
+    <section class="women-collection">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h1 class="text-clipped text-uppercase">
+                    Women's Collection
+                </h1>
+                <p class="text-secondary">
+                    Shop the newest trends
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 hero-img">
+                    <a href="#">
+                        <img src="images/hero/hero1.jpg" alt="picture">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">Women's Nike Air Max</span><br>
+                            <span>Shop now </span><i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-6 hero-img">
+                    <a href="#">
+                        <img src="images/hero/hero2.jpg" alt="picture">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">Women's Nike Air Max</span><br>
+                            <span>Shop now </span><i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 hero-img">
+                    <a href="#">
+                        <img src="images/hero/hero3.jpg" alt="picture">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">Women's Nike Air Max</span><br>
+                            <span>Shop now </span><i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 hero-img">
+                    <a href="#">
+                        <img src="images/hero/hero4.jpg" alt="picture">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">Women's Nike Air Max</span><br>
+                            <span>Shop now </span><i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Women's Collection -->
+    <!-- start new Arrivals -->
+    <section class="arrivals">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h1 class="text-clipped text-uppercase">
+                    The latest and greatest shoes
+                </h1>
+                <p class="text-secondary">
+                    Shop the newest realease
+                </p>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="new-arrival-img mb-3">
+                        <img src="images/shoes/shoe1.jpg" alt="picture">
+                    </div>
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Nike Air Max</span><br>
+                        <span>Shop now </span><i class="fa fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="new-arrival-img mb-3">
+                        <img src="images/shoes/shoe2.jpg" alt="picture">
+                    </div>
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Nike Air Max</span><br>
+                        <span>Shop now </span><i class="fa fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="new-arrival-img mb-3">
+                        <img src="images/shoes/shoe3.jpg" alt="picture">
+                    </div>
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Nike Air Max</span><br>
+                        <span>Shop now </span><i class="fa fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="new-arrival-img mb-3">
+                        <img src="images/shoes/shoe4.jpg" alt="picture">
+                    </div>
+                    <a href="#">
+                        <span class="text-uppercase font-weight-bold">Nike Air Max</span><br>
+                        <span>Shop now </span><i class="fa fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end new Arrivals -->
+
+    <!-- Servies -->
+    <section class="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fa fa-shipping-fast text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">Free wouldwide Shipping</h5>
+                        <p>Free shipping for all orders over $100</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fa fa-sync text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">Money back guarantee</h5>
+                        <p>We return money within 30 days of purchase</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fa fa-headset text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">24/7 customer support</h5>
+                        <p>On demand 24/7 customer support</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fa fa-credit-card text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">Secure Online payment</h5>
+                        <p>We use top of the line data encryption</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Services -->
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <address>
+                        <strong class="h3 font-weight-normal">Meteor Goods</strong><br>
+                        123 Example Street <br>
+                        Antartica, Example 0987
+                        Phone: (321) 343-5435
+                    </address>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Our Mission</h5>
+                        <span class="custom-border"></span>
+                    </div>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Our Mission</h5>
+                        <span class="custom-border"></span>
+                    </div>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="line mt-5">
+                <hr>
+                <br>
+
+                <div class="w-100 d-md-flex justify-content-between align-items-center text-center">
+                    <div class="order-2">
+                        <a href="#" class="footer-link">Lorem</a>
+                        <a href="#" class="footer-link ml-3">Lorem</a>
+                        <a href="#" class="footer-link ml-3">Lorem</a>
+                    </div>
+                    
+                    <div>
+                    <p class="m-0 text-sm order-1">
+                        &copy; 2019 Meteor Goods, All rights Reserved.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+    <!-- jQuery library -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
